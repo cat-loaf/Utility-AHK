@@ -12,7 +12,7 @@ Send {Shift}
 
 F12::
 		Suspend On
-		MsgBox, 0, emotes.ahk, Suspended, 1
+		MsgBox, 0, main.ahk, Suspended, 1
 		Pause On
 	return
 
@@ -20,16 +20,16 @@ F12::
 		F3::
 			Suspend Off
 			Pause Off
-		MsgBox, 0, emotes.ahk, Unsuspended, 1
+		MsgBox, 0, main.ahk, Unsuspended, 1
 		
 		return
 	#If			
 ::adcom::
 	InputBox, AdminPrompt, Admin Commands, Enter Admin Command: , , 300, 150 
 	If (AdminPrompt = "edit" || AdminPrompt = "/e")
-		Run notepad.exe %A_ScriptDir%\emotes.ahk
+		Run notepad.exe %A_ScriptDir%\main.ahk
 	Else If (AdminPrompt = "reload" || AdminPrompt = "/r") {
-			MsgBox,, emotes.ahk, Reloading...
+			MsgBox,, main.ahk, Reloading...
 			reload
 		
 		}
