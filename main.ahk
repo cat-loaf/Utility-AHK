@@ -13,3 +13,7 @@ DetectHiddenWindows, On
 #Include %A_ScriptDir%\newEdge.ahk
 
 
+::e_up::↑
+::e_right::→
+::e_left::←
+::e_down::↓

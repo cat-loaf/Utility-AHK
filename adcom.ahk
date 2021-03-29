@@ -2,6 +2,7 @@
 	InputBox, AdminPrompt, Admin Commands, Enter Admin Command: , , 300, 150 
 	If (AdminPrompt = "edit" || AdminPrompt = "/e")
 		Run notepad.exe %A_ScriptDir%\main.ahk
+
 	Else If (AdminPrompt = "reload" || AdminPrompt = "/r") {
 			MsgBox,, main.ahk, Reloading...
 			reload
@@ -24,6 +25,11 @@
 
 	Else If (AdminPrompt = "")
 		MsgBox, No command inputted.
+	
+	Else If (AdminPrompt = "temp")
+		Run temp.ahk
 	Else
 		Run cmd.exe /c %AdminPrompt%
 	return
+	
+
