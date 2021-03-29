@@ -1,0 +1,1 @@
+ClipBoard := 10+2 send
