@@ -1,1 +1,1 @@
-ClipBoard := 10+2 send
+ClipBoard := 100/4
