@@ -4,6 +4,8 @@ SetKeyDelay, 0, 50
 SetKeyDelay, 0, 10
 DetectHiddenWindows, On
 
+
+
 ::e_up::↑
 ::e_right::→
 ::e_left::←
@@ -24,6 +26,4 @@ DetectHiddenWindows, On
 #Include %A_ScriptDir%\quickCalc.ahk
 #Include %A_ScriptDir%\newEdge.ahk
 #Include %A_ScriptDir%\adcom.ahk
-
-
 

@@ -10,6 +10,8 @@ app1muted = 1
 			reload
 		
 		}
+	Else If (AdminPrompt = "exit")
+		ExitApp
 	Else If (AdminPrompt = "dir" || AdminPrompt = "/d")
 		Run explorer.exe %A_ScriptDir%
 		

@@ -21,7 +21,7 @@ return num
 			RunWait, A.ahk
 			xy := trimmer(ClipBoard)
 			MsgBox,, Result, %Calc% = %xy%
-			Send %xy% 
+			Send %xy%
 		}
 		Else {
 			FileDelete, A.ahk
