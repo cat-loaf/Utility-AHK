@@ -1,11 +1,16 @@
+﻿SetTitleMatchMode 2
+SetKeyDelay, 0, 10
 #IfWinActive, Counter-Strike
-	*space::
-		Loop {
-		GetKeyState,state,space,P
-		If state = U
-		break
-		Send,{space}
-		Sleep,20
-		}
-		return
+	*~$Space::
+Sleep 5
+Loop
+{
+GetKeyState, SpaceState, Space, P
+If SpaceState = U
+break 
+Sleep 1
+Send, {Blind}{Space}
+}
+Return
+
 #IfWinActive
