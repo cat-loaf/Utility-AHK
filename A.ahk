@@ -1,1 +1,1 @@
-ClipBoard := (16/2) + 7 send
+ClipBoard := 450/2 send

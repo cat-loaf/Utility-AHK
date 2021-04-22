@@ -6,14 +6,20 @@ Msgbox, On
 
 
 
-
+::encapsulate::
+	Send, )
+	Send, ^{Left}
+	Send, (
+	return
 ::e_up::↑
 ::e_right::→
 ::e_left::←
 ::e_down::↓
 ::amogus::ඞ 
 ::tmrw::tommorrow
-
+::mdash::—
+::^2::²
+::theta::θ
 ::pasteboard::
 	Run notepad
 	sleep, 500
