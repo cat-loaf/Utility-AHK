@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+	font-family: "Franklin Gothic";
+}
+
+</style>
+</head>
+
+<body>
+<h2>/</h2>
+
+<ul class="fa-ul">
+
+<li><span class="fa-li"><i class="fa fa-folder"></i></span><a href="javascript:load_file('https://raw.githubusercontent.com/cat-loaf/Utility-AHK/main/README.md');">utility.ahk</a></li>
+<ul class="fa-ul">
+
+<li><span class="fa-li"><i class="fa fa-file"></i></span><a href="javascript:load_file('https://raw.githubusercontent.com/cat-loaf/Utility-AHK/main/main.ahk');">main.ahk</a></li>
+
+<li><span class="fa-li"><i class="fa fa-file"></i></span><a href="javascript:load_file('https://raw.githubusercontent.com/cat-loaf/Utility-AHK/main/adcom.ahk');">adcom.ahk</a></li>
+
+
+<li><span class="fa-li"><i class="fa fa-file"></i></span><a href="javascript:load_file('https://raw.githubusercontent.com/cat-loaf/Utility-AHK/main/newEdge.ahk');">newEdge.ahk</a></li>
+
+<li><span class="fa-li"><i class="fa fa-file"></i></span><a href="javascript:load_file('https://raw.githubusercontent.com/cat-loaf/Utility-AHK/main/quickCalc.ahk');">quickCalc.ahk</a></li>
+
+<li><span class="fa-li"><i class="fa fa-file"></i></span><a href="javascript:load_file('https://raw.githubusercontent.com/cat-loaf/Utility-AHK/main/reload.ahk');">reload.ahk</a></li>
+
+<li><span class="fa-li"><i class="fa fa-file"></i></span><a href="javascript:load_file('https://raw.githubusercontent.com/cat-loaf/Utility-AHK/main/spotifyController.ahk');">spotifyController.ahk</a></li>
+</ul>
+</ul>
+
+<textarea id="file_editor" style="height:100vh;width:100%;"></textarea>
+
+<script>
+load_file('https://raw.githubusercontent.com/cat-loaf/Utility-AHK/main/README.md');
+function load_file(file) {
+	fetch(file)
+	.then( response => response.text() )
+	.then( text => document.getElementById('file_editor').innerHTML=text);
+}
+</script>
+</body>
+</html>
