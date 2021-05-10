@@ -2,7 +2,7 @@
 SetKeyDelay, 0, 10
 #SingleInstance Force
 DetectHiddenWindows, On
-Msgbox, On
+
 
 
 
@@ -33,5 +33,4 @@ Msgbox, On
 #Include %A_ScriptDir%\quickCalc.ahk
 #Include %A_ScriptDir%\newEdge.ahk
 #Include %A_ScriptDir%\adcom.ahk
-
 #Include %A_ScriptDir%\csgo.ahk
